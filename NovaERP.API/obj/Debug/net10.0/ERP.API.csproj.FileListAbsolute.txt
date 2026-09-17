@@ -83,3 +83,4 @@ D:\Backend\Programming C#\NovaERP\NovaERP.API\obj\Debug\net10.0\refint\ERP.API.d
 D:\Backend\Programming C#\NovaERP\NovaERP.API\obj\Debug\net10.0\ERP.API.pdb
 D:\Backend\Programming C#\NovaERP\NovaERP.API\obj\Debug\net10.0\ERP.API.genruntimeconfig.cache
 D:\Backend\Programming C#\NovaERP\NovaERP.API\obj\Debug\net10.0\ref\ERP.API.dll
+D:\Backend\Programming C#\NovaERP\NovaERP.API\obj\Debug\net10.0\ERP.API.sourcelink.json

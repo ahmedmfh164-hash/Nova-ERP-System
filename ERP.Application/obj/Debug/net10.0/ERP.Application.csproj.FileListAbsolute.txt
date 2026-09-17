@@ -17,3 +17,4 @@ D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Applicat
 D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\refint\ERP.Application.dll
 D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.pdb
 D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ref\ERP.Application.dll
+D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.sourcelink.json

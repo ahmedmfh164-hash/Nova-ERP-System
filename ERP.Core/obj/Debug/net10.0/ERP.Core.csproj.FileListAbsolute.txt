@@ -11,3 +11,4 @@ D:\Backend\Programming C#\NovaERP\ERP.Core\obj\Debug\net10.0\ERP.Core.pdb
 D:\Backend\Programming C#\NovaERP\ERP.Core\obj\Debug\net10.0\ref\ERP.Core.dll
 D:\Backend\Programming C#\NovaERP\ERP.Core\obj\Debug\net10.0\ERP.Core.csproj.AssemblyReference.cache
 D:\Backend\Programming C#\NovaERP\ERP.Core\obj\Debug\net10.0\ERP.Core.csproj.Up2Date
+D:\Backend\Programming C#\NovaERP\ERP.Core\obj\Debug\net10.0\ERP.Core.sourcelink.json

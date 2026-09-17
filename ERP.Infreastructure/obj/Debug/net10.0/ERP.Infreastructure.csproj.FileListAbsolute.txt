@@ -19,3 +19,4 @@ D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infr
 D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\refint\ERP.Infreastructure.dll
 D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.pdb
 D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ref\ERP.Infreastructure.dll
+D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.sourcelink.json

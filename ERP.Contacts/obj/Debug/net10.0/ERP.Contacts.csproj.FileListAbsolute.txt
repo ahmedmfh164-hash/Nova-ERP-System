@@ -15,3 +15,4 @@ D:\Backend\Programming C#\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.cs
 D:\Backend\Programming C#\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Cont.10C050B2.Up2Date
 D:\Backend\Programming C#\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Core.dll
 D:\Backend\Programming C#\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Core.pdb
+D:\Backend\Programming C#\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.sourcelink.json

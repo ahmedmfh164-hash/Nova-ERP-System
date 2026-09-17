@@ -59,7 +59,7 @@
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "D:\\Backend\\Programming C#\\NovaERP\\NovaERP.API\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAwwDQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwCwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-14T20:42:32.372Z",
               "EditorCaption": ""
@@ -158,8 +158,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAQwG0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T21:40:50.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T21:40:50.811Z"
             }
           ]
         }
