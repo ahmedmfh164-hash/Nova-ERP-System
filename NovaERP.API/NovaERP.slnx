@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../ERP.Application/ERP.Application.csproj" Id="28aa98c5-7311-491c-9565-7c2845348652" />
+  <Project Path="../ERP.Contacts/ERP.Contacts.csproj" Id="6ddf3ab2-73f6-4b03-98ec-5a533b6f3759" />
+  <Project Path="../ERP.Core/ERP.Core.csproj" Id="5e14bbe5-22a2-4256-bc95-986cd2931659" />
+  <Project Path="../ERP.Domain/ERP.Domain.csproj" Id="a0a4d316-d29b-4713-8472-36aebd697b6a" />
+  <Project Path="../ERP.Infreastructure/ERP.Infreastructure.csproj" Id="c0323c0a-96aa-408f-a828-7fc82c4bf295" />
+  <Project Path="ERP.API.csproj" />
+</Solution>
