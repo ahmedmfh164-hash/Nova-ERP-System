@@ -1,14 +1,12 @@
 ﻿using ERP.API.Authorization;
 using ERP.Application.Interfaces.Servicies;
-using ERP.Contacts.Requests.People;
 using ERP.Contacts.Requests.Users;
 using ERP.Contacts.Responses;
-using ERP.Domain.Entities;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 using ERP.Core.Enums;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using System.Security.Claims;
 
 namespace ERP.API.Controllers
 {
@@ -70,7 +68,9 @@ namespace ERP.API.Controllers
                 return BadRequest("Invalid Data");
             }
 
-            var result = await _user.AddUserAsync(dto);
+            int createdUserId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
+            var result = await _user.AddUserAsync(dto,createdUserId);
 
             if (result==0)
                 return NotFound("This person is not found.");
@@ -107,11 +107,23 @@ namespace ERP.API.Controllers
             if (userId<1)
                 return BadRequest("Invalid Id");
 
-            if (await _user.DeleteUserAsync(userId))
-                return Ok("Done delete user successfully.");
-            else
-                return NotFound("This user is not found!");
+            try
+            {
+                int deletedByuserId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
 
+                if (await _user.DeleteUserAsync(userId, deletedByuserId))
+                    return Ok("Done delete user successfully.");
+                else
+                    return NotFound("This user is not found!");
+            }
+            catch (SqlException ex)when(ex.Number==547)
+            {
+                return BadRequest("Can not deleted this user because information connected him!");
+            }
+            catch(SqlException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
        
         [Authorize(Roles = "Admin")]

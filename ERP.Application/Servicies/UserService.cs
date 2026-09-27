@@ -27,12 +27,12 @@ namespace ERP.Application.Servicies
 
         }
 
-        public async Task<int?> AddUserAsync(CreatedUserDTO dto)
+        public async Task<int?> AddUserAsync(CreatedUserDTO dto,int createdUserId)
         {
             var user=dto.ToEntity();
             user.Password=PasswordHasher.Hash(user.Password);
 
-            int? userId = await _userRepository.AddUserAsync(user);
+            int? userId = await _userRepository.AddUserAsync(user,createdUserId);
                                                       
             return userId;
         }
@@ -57,9 +57,9 @@ namespace ERP.Application.Servicies
             return user == null ? null : user.ToResponseDTO();
         }
 
-        public async Task<bool> DeleteUserAsync(int userId)
+        public async Task<bool> DeleteUserAsync(int userId,int deletedByuserId)
         {
-            var rowAffected = await _userRepository.DeleteUserAsync(userId);
+            var rowAffected = await _userRepository.DeleteUserAsync(userId,deletedByuserId);
 
             return rowAffected>0;
         }

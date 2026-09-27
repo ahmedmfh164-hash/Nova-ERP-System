@@ -10,9 +10,9 @@ namespace ERP.Application.Interfaces.Repositories
     public interface IUserRepository
     {
         public Task<List<User>> GetAllUsersAsync();
-        public Task<int> AddUserAsync(User user);
+        public Task<int> AddUserAsync(User user,int createdUserId);
         public Task<int> EditUserInfoAsync(UpdatedUserDTO user);
-        public Task<int> DeleteUserAsync(int userId);
+        public Task<int> DeleteUserAsync(int userId,int deletedByuserId);
         public Task<User> GetUserByUserIdAsync(int userId);
         public Task<User> GetUserByEmailAsync(string email);
         public Task<bool> isUserExistAsync(int userId);

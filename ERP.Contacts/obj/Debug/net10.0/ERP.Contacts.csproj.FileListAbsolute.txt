@@ -15,4 +15,22 @@ D:\Backend\Programming C#\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.cs
 D:\Backend\Programming C#\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Cont.10C050B2.Up2Date
 D:\Backend\Programming C#\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Core.dll
 D:\Backend\Programming C#\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Core.pdb
+D:\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Contacts.deps.json
+D:\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Contacts.dll
+D:\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Contacts.pdb
+D:\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Core.dll
+D:\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Domain.dll
+D:\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Core.pdb
+D:\NovaERP\ERP.Contacts\bin\Debug\net10.0\ERP.Domain.pdb
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.csproj.AssemblyReference.cache
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.GeneratedMSBuildEditorConfig.editorconfig
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.AssemblyInfoInputs.cache
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.AssemblyInfo.cs
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.csproj.CoreCompileInputs.cache
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.sourcelink.json
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Cont.10C050B2.Up2Date
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.dll
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\refint\ERP.Contacts.dll
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.pdb
+D:\NovaERP\ERP.Contacts\obj\Debug\net10.0\ref\ERP.Contacts.dll
 D:\Backend\Programming C#\NovaERP\ERP.Contacts\obj\Debug\net10.0\ERP.Contacts.sourcelink.json

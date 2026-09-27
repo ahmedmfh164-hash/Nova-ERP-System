@@ -50,7 +50,7 @@ namespace ERP.Infreastructure.Repositories
 
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetAllCustomers", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetAllCustomers", con);
 
             list= await _StoredProcedture.ExecuteListAsync(cmd, con, MapToCustomer);
 
@@ -61,7 +61,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_AddNewCustomer", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_AddNewCustomer", con);
 
             SqlCommandExtentions.AddParameters(cmd, customerDTO);
 
@@ -75,7 +75,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_DeleteCustomer", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_DeleteCustomer", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@CustomerId", customerId);
 
@@ -88,7 +88,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetCustomerByCustomerId", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetCustomerByCustomerId", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@CustomerId", customerId);
 
@@ -102,7 +102,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_isCustomerExist", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_isCustomerExist", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@CustomerId", customerId);
 

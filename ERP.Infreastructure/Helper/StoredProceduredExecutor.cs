@@ -79,16 +79,10 @@ namespace ERP.Infreastructure.Helper
 
         public async Task<bool> ExecuteBooleenAsync(SqlCommand cmd, SqlConnection conn)
         {
-            bool isFound = false;
-            using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
-            {
-                if (await reader.ReadAsync())
-                {
-                    isFound = true;
-                }
-            }
+         object? result= await cmd.ExecuteScalarAsync();
 
-            return isFound;
+            return Convert.ToBoolean(result);
+
         }
 
     }

@@ -1,7 +1,9 @@
-﻿using ERP.Application.Interfaces.Servicies;
+﻿using ERP.API.Authorization;
+using ERP.Application.Interfaces.Servicies;
 using ERP.Contacts.Requests.Categories;
 using ERP.Contacts.Requests.People;
 using ERP.Contacts.Responses;
+using ERP.Core.Enums;
 using ERP.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +22,7 @@ namespace ERP.API.Controllers
         }
 
 
-
+        [HasPermission( PermissionModules.Categories, PermissionAction.Read)]
         [HttpGet("Categories", Name = "GetCategoriesAsync")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -35,6 +37,7 @@ namespace ERP.API.Controllers
         }
 
 
+        [HasPermission( PermissionModules.Categories, PermissionAction.Read)]
         [HttpGet("GetCategories/{CategoryId}", Name = "GetCategoriesByCategoriesIdAsync")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -52,6 +55,7 @@ namespace ERP.API.Controllers
             return Ok(category);
         }
 
+        [HasPermission( PermissionModules.Categories, PermissionAction.Create)]
         [HttpPost("AddCategory", Name = "AddCategoryAsync")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -67,6 +71,7 @@ namespace ERP.API.Controllers
         }
 
 
+        [HasPermission( PermissionModules.Categories, PermissionAction.Update)]
         [HttpPatch("UpdateInfo", Name = "UpdateCategoryAsync")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -83,6 +88,7 @@ namespace ERP.API.Controllers
         }
 
 
+        [HasPermission( PermissionModules.Categories, PermissionAction.Delete)]
         [HttpDelete("Delete/{CategoryId}", Name = "DeleteCategoryAsync")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -100,6 +106,7 @@ namespace ERP.API.Controllers
         }
 
 
+        [HasPermission( PermissionModules.Categories, PermissionAction.Read)]
         [HttpGet("exist/{CategoryId}", Name = "IsCategoryExistByIdAsync")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -113,10 +120,12 @@ namespace ERP.API.Controllers
             return Ok(isFound);
         }
 
+
+        [HasPermission( PermissionModules.Categories, PermissionAction.Read)]
         [HttpGet("exists/{CategoryName}", Name = "IsNameExistByNameAsync")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult> IsCategoryExistByNameAsync(int CategoryName)
+        public async Task<ActionResult> IsCategoryExistByNameAsync(string CategoryName)
         {
             bool isFound = await _service.IsCategoryExistAsync(CategoryName);
 

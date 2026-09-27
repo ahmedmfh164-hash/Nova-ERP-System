@@ -25,10 +25,15 @@ namespace ERP.API.Authorization
             if (context.User.IsInRole(Roles.Admin.ToString()))
             {
                     context.Succeed(requirement);
+                    return;
             }
 
-            if (await _rolePermissionsService.HasPermissionAsync(context.User.FindFirst(ClaimTypes.Role).ToString()
-                , requirement.Permission.Module, requirement.Permission.Action))
+            string? role = context.User.FindFirst(ClaimTypes.Role)?.Value;
+
+            if (role== null)
+                return;
+
+            if (await _rolePermissionsService.HasPermissionAsync(role , requirement.Permission.Module, requirement.Permission.Action))
                 context.Succeed(requirement);
         }
 

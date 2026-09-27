@@ -50,7 +50,7 @@ namespace ERP.Infreastructure.Repositories
 
          await using var con= await _DbConnectionFactory.CreateConnectionAsync();
 
-           await using var cmd = _StoredProcedture.CreateCommand("sp_GetAllPeople",con) ;
+           await using var cmd = _StoredProcedture.CreateCommand("usp_GetAllPeople",con) ;
             
             list= await _StoredProcedture.ExecuteListAsync(cmd,con,MapToPerson);
 
@@ -61,7 +61,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_AddNewPerson", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_AddNewPerson", con);
 
             SqlCommandExtentions.AddParameters(cmd, person);
 
@@ -74,7 +74,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_UpdatePerson", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_UpdatePerson", con);
 
             SqlCommandExtentions.AddParameters(cmd, updatedPerson);
 
@@ -86,7 +86,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_DeletePerson", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_DeletePerson", con);
 
             SqlCommandExtentions.AddParameters(cmd,"@PersonId",personId);
 
@@ -100,7 +100,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetPersonByPersonId", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetPersonByPersonId", con);
 
             SqlCommandExtentions.AddParameters(cmd,"@PersonId", personId);
 
@@ -114,7 +114,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_isPersonExistbyId", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_isPersonExistbyId", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@PersonId", personId);
 
@@ -127,7 +127,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_isPersonExistByEmail", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_isPersonExistByEmail", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@Email", email);
 

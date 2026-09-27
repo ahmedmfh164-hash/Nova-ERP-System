@@ -5,16 +5,10 @@ using ERP.Application.Authorization;
 using ERP.Core.Enums;
 using ERP.Domain;
 using ERP.Infreastructure;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi;
 using SMS.API.Configurations;
 using System.Security.Claims;
-using System.Text;
+
 using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);

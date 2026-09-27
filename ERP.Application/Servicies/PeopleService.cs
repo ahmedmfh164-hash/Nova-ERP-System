@@ -76,6 +76,8 @@ namespace ERP.Application.Servicies
 
         public async Task<bool> DeletePersonAsync(int PersonId)
         {
+
+
             var deletedPerson = await _peopleRepository.DeletePersonAsync(PersonId);
 
             if(deletedPerson==null)

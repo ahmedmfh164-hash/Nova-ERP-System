@@ -17,4 +17,24 @@ D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Applicat
 D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\refint\ERP.Application.dll
 D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.pdb
 D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ref\ERP.Application.dll
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Application.deps.json
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Application.dll
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Application.pdb
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Contacts.dll
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Core.dll
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Domain.dll
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Contacts.pdb
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Core.pdb
+D:\NovaERP\ERP.Application\bin\Debug\net10.0\ERP.Domain.pdb
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.csproj.AssemblyReference.cache
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.AssemblyInfoInputs.cache
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.AssemblyInfo.cs
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.csproj.CoreCompileInputs.cache
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.sourcelink.json
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Appl.DD782D7E.Up2Date
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.dll
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\refint\ERP.Application.dll
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.pdb
+D:\NovaERP\ERP.Application\obj\Debug\net10.0\ref\ERP.Application.dll
 D:\Backend\Programming C#\NovaERP\ERP.Application\obj\Debug\net10.0\ERP.Application.sourcelink.json

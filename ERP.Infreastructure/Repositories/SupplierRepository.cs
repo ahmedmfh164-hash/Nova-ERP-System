@@ -52,7 +52,7 @@ namespace ERP.Infreastructure.Repositories
 
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetAllSuppliers", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetAllSuppliers", con);
 
             list= await _StoredProcedture.ExecuteListAsync(cmd, con, MapToSupplier);
 
@@ -63,7 +63,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_AddNewSupplier", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_AddNewSupplier", con);
 
             SqlCommandExtentions.AddParameters(cmd, supplierDTO);
 
@@ -77,7 +77,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_DeleteSupplier", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_DeleteSupplier", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@SupplierId", supplierId);
 
@@ -90,7 +90,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetSupplierBySupplierId", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetSupplierBySupplierId", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@SupplierId", supplierId);
 
@@ -104,7 +104,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_isSupplierExist", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_isSupplierExist", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@SupplierId", supplierId);
 

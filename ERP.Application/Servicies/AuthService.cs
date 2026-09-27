@@ -39,9 +39,9 @@ namespace ERP.Application.Servicies
                 };
             }
 
-            var user = await _userRepository.GetUserByEmailAsync(login.Email);
+            User? user = await _userRepository.GetUserByEmailAsync(login.Email);
 
-            if (!PasswordHasher.Verify(login.Password, user.Password))
+            if (user==null||!PasswordHasher.Verify(login.Password, user.Password))
                 return new TokenResponseDTO
                 {
                     AccessToken = null,

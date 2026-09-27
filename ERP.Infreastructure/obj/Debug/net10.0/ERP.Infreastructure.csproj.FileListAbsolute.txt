@@ -19,4 +19,26 @@ D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infr
 D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\refint\ERP.Infreastructure.dll
 D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.pdb
 D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ref\ERP.Infreastructure.dll
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Infreastructure.deps.json
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Infreastructure.dll
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Infreastructure.pdb
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Application.dll
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Contacts.dll
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Core.dll
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Domain.dll
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Application.pdb
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Contacts.pdb
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Core.pdb
+D:\NovaERP\ERP.Infreastructure\bin\Debug\net10.0\ERP.Domain.pdb
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.csproj.AssemblyReference.cache
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.AssemblyInfoInputs.cache
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.AssemblyInfo.cs
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.csproj.CoreCompileInputs.cache
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.sourcelink.json
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infr.E684648F.Up2Date
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.dll
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\refint\ERP.Infreastructure.dll
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.pdb
+D:\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ref\ERP.Infreastructure.dll
 D:\Backend\Programming C#\NovaERP\ERP.Infreastructure\obj\Debug\net10.0\ERP.Infreastructure.sourcelink.json

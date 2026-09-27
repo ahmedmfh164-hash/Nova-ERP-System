@@ -23,6 +23,18 @@ namespace ERP.Infreastructure
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IRolePermissionsRepository, RolePermissionsRepository>();
             services.AddScoped<ICategoriesRepository,CategoriesRepository>();
+            services.AddScoped<IProductsRepository, ProductsRepository>();
+            services.AddScoped<IWarehousesRepository, WarehousesRepository>();
+            services.AddScoped<IProductWarehousesRepository, ProductWarehousesRepository>();
+            services.AddScoped<IPurchaseInvoicesRepository, PurchaseInvoicesRepository>();
+            services.AddScoped<IPurchaseInvoiceItemsRepository, PurchaseInvoiceItemsRepository>();
+            services.AddScoped<ISaleInvoicesRepository, SaleInvoicesRepository>();
+            services.AddScoped<ISaleInvoiceItemsRepository, SaleInvoiceItemsRepository>();
+            services.AddScoped<ISaleReturnsRepository, SaleReturnsRepository>();
+            services.AddScoped<ISaleReturnItemsRepository, SaleReturnItemsRepository>();
+            services.AddScoped<IStockMovementsRepository, StockMovementsRepository>();
+            services.AddScoped<IAuditLogRepository, AuditLogsRepository>();
+            services.AddScoped<ISettingsRepository, SettingsRepository>();
             return services;
         }
     }

@@ -44,20 +44,21 @@ namespace ERP.Infreastructure.Repositories
 
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetAllUsers", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetAllUsers", con);
 
             list= await _StoredProcedture.ExecuteListAsync(cmd, con, MapToUser);
 
             return list;
         }
 
-        public async Task<int> AddUserAsync(User user)
+        public async Task<int> AddUserAsync(User user,int createdUserId)
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_AddNewUser", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_AddNewUser", con);
 
             SqlCommandExtentions.AddParameters(cmd, user);
+            SqlCommandExtentions.AddParameters(cmd, "@CreatedUserId", createdUserId);
 
             int userId = await _StoredProcedture.ExecuteScalarAsync(cmd, con);
 
@@ -68,7 +69,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_UpdateUser", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_UpdateUser", con);
 
             SqlCommandExtentions.AddParameters(cmd, user);
 
@@ -76,13 +77,14 @@ namespace ERP.Infreastructure.Repositories
 
         }
 
-        public async Task<int> DeleteUserAsync(int userId)
+        public async Task<int> DeleteUserAsync(int userId,int deletedByuserId)
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_DeleteUser", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_DeleteUser", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@UserId", userId);
+            SqlCommandExtentions.AddParameters(cmd, "@deletedByuserId", deletedByuserId);
 
             return await _StoredProcedture.ExecuteNonQueryAsync(cmd, con);
 
@@ -93,7 +95,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetUserByUserId", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetUserByUserId", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@UserId", userId);
 
@@ -106,7 +108,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_GetUserByEmail", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_GetUserByEmail", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@email", email);
 
@@ -120,7 +122,7 @@ namespace ERP.Infreastructure.Repositories
         {
             await using var con = await _DbConnectionFactory.CreateConnectionAsync();
 
-            await using var cmd = _StoredProcedture.CreateCommand("sp_isUserExist", con);
+            await using var cmd = _StoredProcedture.CreateCommand("usp_isUserExist", con);
 
             SqlCommandExtentions.AddParameters(cmd, "@UserId", userId);
 
